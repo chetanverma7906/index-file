@@ -1,146 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chetan Verma - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 0;
-            background-color: #f4f4f4;
+        /* Custom scrollbar for a better look */
+        ::-webkit-scrollbar {
+            width: 8px;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #333;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .section h2 {
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 5px;
-        }
-        .section p, .section li {
-            margin: 5px 0;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            margin-bottom: 10px;
-        }
-        .contact-info {
-            font-size: 14px;
-            color: #555;
-        }
-        .contact-info a {
-            text-decoration: none;
-            color: #007bff;
-        }
-        .job-title {
-            font-weight: bold;
-            color: #007bff;
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #1d4ed8;
+            border-radius: 4px;
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>Chetan Verma</h1>
-        <p class="contact-info">
-            <br>
-            Dibai, Bulandshahr (UP), 202393 | +917906791977 | <a href="mailto:ck193229@gmail.com">ck193229@gmail.com</a><br>
-            <a href="#">GitHub</a> | <a href="#">LinkedIn</a> | <a href="#">LeetCode (Solved 100+ Questions)</a>
-        </p>
 
-        <div class="section">
-            <h2>Career Summary</h2>
-            <p>
-                A highly motivated and detail-oriented Web Developer with a solid foundation in HTML, CSS,
-                JavaScript, and responsive design. Eager to contribute to dynamic projects and learn new
-                technologies. Possesses strong problem-solving skills and a passion for creating efficient, user-friendly websites. Ready to bring enthusiasm and a fresh perspective to a development team.
+<body class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-gray-800">
+
+    <div class="max-w-4xl mx-auto p-8 bg-white shadow-xl rounded-3xl mt-10">
+        <!-- Name & Contact Info -->
+        <header class="mb-10 text-center">
+            <h1 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 mb-4">Chetan Verma</h1>
+            <p class="text-lg text-gray-600">
+                Dibai, Bulandshahr (UP), 202393 | +917906791977 | 
+                <a href="mailto:ck193229@gmail.com" class="text-indigo-500 hover:text-purple-500 transition duration-300 ease-in-out">ck193229@gmail.com</a><br>
+                <a href="https://github.com/yourprofile" class="text-pink-500 hover:text-red-500 transition duration-300 ease-in-out">GitHub</a> |
+                <a href="https://linkedin.com/in/yourprofile" class="text-pink-500 hover:text-red-500 transition duration-300 ease-in-out">LinkedIn</a> |
+                <a href="https://leetcode.com/yourprofile" class="text-pink-500 hover:text-red-500 transition duration-300 ease-in-out">LeetCode (100+ Solved)</a>
             </p>
-        </div>
+        </header>
 
-        <div class="section">
-            <h2>Experience</h2>
+        <!-- Career Summary -->
+        <section class="mb-10">
+            <h2 class="text-3xl font-bold text-gray-700 border-b-4 border-pink-500 pb-2 mb-4">Career Summary</h2>
+            <p class="leading-relaxed text-gray-700">
+                A motivated Web Developer with hands-on experience in full-stack development.
+                Proficient in front-end technologies like HTML, CSS, JavaScript, and frameworks like React.js and Next.js.
+                Demonstrated problem-solving skills through real-world projects, including a job portal and a signature app.
+                Eager to apply my knowledge in a collaborative environment and learn cutting-edge technologies.
+            </p>
+        </section>
+
+        <!-- Experience -->
+        <section class="mb-10">
+            <h2 class="text-3xl font-bold text-gray-700 border-b-4 border-purple-500 pb-2 mb-4">Experience</h2>
             <ul>
-                <li>
-                    <p class="job-title">Full Stack Developer Intern - Prodigy Infotech</p>
-                    <p>Jan 2024 - Feb 2024</p>
-                    <p>Worked on web development projects, including job portals and dynamic applications, utilizing technologies such as HTML, CSS, JavaScript, React.js, and Node.js (Next.js). Gained experience in MongoDB for database management and developed user-friendly, responsive web applications.</p>
+                <li class="mb-8">
+                    <h3 class="text-2xl font-semibold text-indigo-600">Full Stack Developer Intern - Prodigy Infotech</h3>
+                    <p class="text-gray-500">January 2024 - February 2024</p>
+                    <p class="mt-2 text-gray-700">
+                        Worked on web development projects, including job portals and dynamic applications, utilizing technologies such as HTML, CSS, JavaScript, React.js, and Node.js (Next.js). Gained experience in MongoDB for database management and developed user-friendly, responsive web applications.
+                    </p>
                 </li>
             </ul>
-        </div>
+        </section>
 
-        <div class="section">
-            <h2>Relevant Projects</h2>
+        <!-- Projects -->
+        <section class="mb-10">
+            <h2 class="text-3xl font-bold text-gray-700 border-b-4 border-indigo-500 pb-2 mb-4">Relevant Projects</h2>
             <ul>
-                <li>
-                    <p class="job-title">NayiNaukari (Job Portal)</p>
-                    <p>An online job portal that helps job seekers find jobs. Developed using HTML, CSS, JavaScript, Bootstrap, and React.js for the frontend, and Node.js (Next.js) for the backend. MongoDB was used to store job seeker details.</p>
+                <li class="mb-8">
+                    <h3 class="text-2xl font-semibold text-purple-600">NayiNaukari (Job Portal)</h3>
+                    <p class="mt-2 text-gray-700">An online job portal that helps job seekers find jobs. Developed using HTML, CSS, JavaScript, Bootstrap, and React.js for the frontend, and Node.js (Next.js) for the backend. MongoDB was used to store job seeker details.</p>
                 </li>
-                <li>
-                    <p class="job-title">SignatureApp</p>
-                    <p>Created a dynamic signature app using HTML, CSS, and JavaScript. It allows users to draw and save their signatures, offering a smooth drawing experience across devices, with options to clear, save, and download signatures.</p>
+                <li class="mb-8">
+                    <h3 class="text-2xl font-semibold text-purple-600">SignatureApp</h3>
+                    <p class="mt-2 text-gray-700">Created a dynamic signature app using HTML, CSS, and JavaScript. It allows users to draw and save their signatures, offering a smooth drawing experience across devices, with options to clear, save, and download signatures.</p>
                 </li>
-                <li>
-                    <p class="job-title">WeatherX</p>
-                    <p>Developed a weather application that provides real-time updates and 7-day weather forecasts. Integrated third-party APIs to fetch data and used HTML, CSS, JavaScript, and Bootstrap for the frontend design.</p>
+                <li class="mb-8">
+                    <h3 class="text-2xl font-semibold text-purple-600">WeatherX</h3>
+                    <p class="mt-2 text-gray-700">Developed a weather application that provides real-time updates and 7-day weather forecasts. Integrated third-party APIs to fetch data and used HTML, CSS, JavaScript, and Bootstrap for the frontend design.</p>
                 </li>
             </ul>
-        </div>
+        </section>
 
-        <div class="section">
-            <h2>Education</h2>
+        <!-- Education -->
+        <section class="mb-10">
+            <h2 class="text-3xl font-bold text-gray-700 border-b-4 border-red-500 pb-2 mb-4">Education</h2>
             <ul>
-                <li>
-                    <p class="job-title">Master of Computer Applications (MCA)</p>
-                    <p>2022 - 2024 | Galgotias College of Engineering and Technology, Greater Noida</p>
-                    <p>CGPA: 7.62</p>
+                <li class="mb-8">
+                    <h3 class="text-2xl font-semibold text-blue-600">Master of Computer Applications (MCA)</h3>
+                    <p class="text-gray-500">2022 - 2024 | Galgotias College of Engineering and Technology, Greater Noida</p>
+                    <p class="text-gray-700">CGPA: 7.62</p>
                 </li>
-                <li>
-                    <p class="job-title">Bachelor of Science</p>
-                    <p>2019 - 2022 | Dr. BRU, Agra, Uttar Pradesh</p>
+                <li class="mb-8">
+                    <h3 class="text-2xl font-semibold text-blue-600">Bachelor of Science</h3>
+                    <p class="text-gray-500">2019 - 2022 | Dr. BRU, Agra, Uttar Pradesh</p>
                 </li>
             </ul>
-        </div>
+        </section>
 
-        <div class="section">
-            <h2>Skills</h2>
-            <ul>
-                <li>Programming Languages: Java, C, JavaScript</li>
-                <li>Frameworks: Express.js, Next.js, Bootstrap</li>
-                <li>Databases: MySQL, MongoDB</li>
-                <li>Frontend: HTML5, CSS</li>
-                <li>Backend: Node.js</li>
-                <li>Version Control: Git, GitHub</li>
+        <!-- Skills -->
+        <section class="mb-10">
+            <h2 class="text-3xl font-bold text-gray-700 border-b-4 border-green-500 pb-2 mb-4">Skills</h2>
+            <ul class="grid grid-cols-2 gap-4">
+                <li class="bg-blue-100 p-3 rounded-lg shadow-md">Java, C, JavaScript</li>
+                <li class="bg-pink-100 p-3 rounded-lg shadow-md">Express.js, Next.js, Bootstrap</li>
+                <li class="bg-purple-100 p-3 rounded-lg shadow-md">MySQL, MongoDB</li>
+                <li class="bg-green-100 p-3 rounded-lg shadow-md">HTML5, CSS</li>
+                <li class="bg-red-100 p-3 rounded-lg shadow-md">Node.js</li>
+                <li class="bg-yellow-100 p-3 rounded-lg shadow-md">Git, GitHub</li>
             </ul>
-        </div>
+        </section>
 
-        <div class="section">
-            <h2>Certifications</h2>
+        <!-- Certifications -->
+        <section class="mb-10">
+            <h2 class="text-3xl font-bold text-gray-700 border-b-4 border-yellow-500 pb-2 mb-4">Certifications</h2>
             <ul>
-                <li>Excel (Udemy)</li>
-                <li>Introduction to Cybersecurity - Cisco Networking Academy</li>
-                <li>Cybersecurity Essentials - Cisco Networking Academy</li>
+                <li class="mb-3">Excel (Udemy)</li>
+                <li class="mb-3">Introduction to Cybersecurity - Cisco Networking Academy</li>
+                <li class="mb-3">Cybersecurity Essentials - Cisco Networking Academy</li>
             </ul>
-        </div>
+        </section>
 
-        <div class="section">
-            <h2>Personal Details</h2>
+        <!-- Personal Details -->
+        <section>
+            <h2 class="text-3xl font-bold text-gray-700 border-b-4 border-teal-500 pb-2 mb-4">Personal Details</h2>
             <ul>
                 <li>Date of Birth: 16-09-2002</li>
             </ul>
-        </div>
+        </section>
+
     </div>
+
 </body>
+
 </html>
